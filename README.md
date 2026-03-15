@@ -1,27 +1,48 @@
-This project performs exploratory data analysis (EDA) on a Superstore dataset containing sales, profit, discounts, customer info, and product categories. The goal is to analyze business performance, uncover trends, and generate actionable insights.
+# Superstore Sales Analysis & Dashboard
 
-Key Highlights:
+## 📌 Project Overview
+This project performs **exploratory data analysis (EDA)** and interactive dashboarding on the Superstore dataset to uncover business insights, track sales performance, and identify profitable customer segments.  
+The goal is to transform raw sales data into actionable insights to support data-driven decisions.
 
-Data Cleaning: Handle missing values, duplicates, and convert dates for time analysis.
+## 🛠️ Tools & Technologies
+- **Python:** pandas, numpy, matplotlib, seaborn  
+- **Dashboarding:** Power BI (interactive .pbix file)  
+- **Data Handling:** CSV dataset (Sample - Superstore.csv)  
+- **Environment:** Google Colab
 
-Sales & Profit Analysis: Identify top-performing states, categories, and products; analyze discounts vs. profit.
+## 📂 Repository Structure
+│
+├─ README.md # Project overview & documentation
+├─ Sample - Superstore.csv # Raw sales dataset
+├─ Supesrore_EDA_Complete_Project.ipynb # Python EDA notebook
+├─ SUPERSTORE PROJECT.pbix # Interactive Power BI dashboard
 
-Time-Series Analysis: Track monthly and seasonal sales trends.
 
-Customer Segmentation: Classify customers into low, medium, and high-profit segments.
+## 📝 Data Cleaning & Preprocessing
+- Handled missing values and duplicates  
+- Converted date columns for time-based analysis  
+- Ensured numeric columns (Sales, Profit, Discount) are in proper format  
+- Created **YearMonth** column for time-series analysis  
 
-Pivot Tables & Heatmaps: Explore region-category performance for actionable insights.
+## 📊 Exploratory Data Analysis (EDA)
+- **Sales Analysis:** Top-performing states, categories, and products  
+- **Profit Analysis:** Relationship between discounts and profit, profit by region & category  
+- **Time-Series Analysis:** Monthly sales trends, seasonal patterns  
+- **Customer Segmentation:** Low, medium, and high-profit customer segments  
+- **Pivot Tables & Heatmaps:** Region-category performance  
 
-Business Insights:
+## 💡 Key Insights
+- Electronics category has the highest profit per unit, while Furniture has high sales volume but lower margins  
+- Peak sales occur in November–December; discounts impact profit differently across categories  
+- High-profit customers contribute significantly to revenue; targeted retention recommended  
+- California leads in total sales; South region has lower profitability despite volume  
 
-Electronics is highly profitable; high-volume categories like Furniture have lower margins.
+## 🎯 Deliverables
+1. **Supesrore_EDA_Complete_Project.ipynb:** Complete Python EDA notebook  
+2. **SUPERSTORE PROJECT.pbix:** Interactive Power BI dashboard with filters, KPIs, and drill-downs  
+3. **Sample - Superstore.csv:** Source dataset  
 
-Peak sales occur in November-December; discounts impact profit differently across categories.
-
-High-profit customers are key for revenue, suggesting targeted retention strategies.
-
-Tools Used:
-
-Python (pandas, NumPy), Matplotlib, Seaborn, Google Colab
-
-Objective: Transform raw sales data into actionable business insights, demonstrating skills in cleaning, visualization, analysis, and storytelling for data-driven decisions.
+## 📈 Outcome
+- Cleaned and analyzed 9,994+ sales records  
+- Developed actionable business insights to improve sales strategy and customer targeting  
+- Created interactive dashboard for real-time monitoring of sales and profit performance
