@@ -1,48 +1,109 @@
-# Superstore Sales Analysis & Dashboard
+# 📊 Superstore Sales Analysis & Interactive Dashboard
 
 ## 📌 Project Overview
-This project performs **exploratory data analysis (EDA)** and interactive dashboarding on the Superstore dataset to uncover business insights, track sales performance, and identify profitable customer segments.  
-The goal is to transform raw sales data into actionable insights to support data-driven decisions.
+This project performs end-to-end data analysis and dashboarding on the Superstore dataset to uncover key business drivers of profitability and enable data-driven decision-making.
+
+The analysis combines **Exploratory Data Analysis (EDA), statistical modeling, and interactive visualization** to identify trends in sales, profit, customer behavior, and pricing strategy.
+
+---
 
 ## 🛠️ Tools & Technologies
-- **Python:** pandas, numpy, matplotlib, seaborn  
-- **Dashboarding:** Power BI (interactive .pbix file)  
-- **Data Handling:** CSV dataset (Sample - Superstore.csv)  
-- **Environment:** Google Colab
+- **Python**: pandas, numpy, matplotlib, seaborn
+- **Statistical Analysis**: scipy, statsmodels
+- **Dashboarding**: Power BI (.pbix interactive dashboard)
+- **Environment**: Google Colab
+
+---
 
 ## 📂 Repository Structure
-│
-├─ README.md # Project overview & documentation
-├─ Sample - Superstore.csv # Raw sales dataset
-├─ Supesrore_EDA_Complete_Project.ipynb # Python EDA notebook
-├─ SUPERSTORE PROJECT.pbix # Interactive Power BI dashboard
+  │ ├─ README.md # Project documentation
+  │ ├─ Sample - Superstore.csv # Raw dataset
+  │ ├─ Superstore_EDA_Complete.ipynb # Python analysis notebook
+  │ ├─ Superstore_Dashboard.pbix # Power BI dashboard
 
 
-## 📝 Data Cleaning & Preprocessing
-- Handled missing values and duplicates  
-- Converted date columns for time-based analysis  
-- Ensured numeric columns (Sales, Profit, Discount) are in proper format  
-- Created **YearMonth** column for time-series analysis  
+---
 
-## 📊 Exploratory Data Analysis (EDA)
-- **Sales Analysis:** Top-performing states, categories, and products  
-- **Profit Analysis:** Relationship between discounts and profit, profit by region & category  
-- **Time-Series Analysis:** Monthly sales trends, seasonal patterns  
-- **Customer Segmentation:** Low, medium, and high-profit customer segments  
-- **Pivot Tables & Heatmaps:** Region-category performance  
+## 🧹 Data Cleaning & Feature Engineering
+- Handled missing values and removed duplicates
+- Converted date columns for time-series analysis
+- Ensured correct data types for Sales, Profit, Discount
+- Created **YearMonth** for trend analysis
+- Engineered KPIs like:
+  - Loss-making orders
+  - Profit per order
+  - Customer segments
 
-## 💡 Key Insights
-- Electronics category has the highest profit per unit, while Furniture has high sales volume but lower margins  
-- Peak sales occur in November–December; discounts impact profit differently across categories  
-- High-profit customers contribute significantly to revenue; targeted retention recommended  
-- California leads in total sales; South region has lower profitability despite volume  
+---
 
-## 🎯 Deliverables
-1. **Supesrore_EDA_Complete_Project.ipynb:** Complete Python EDA notebook  
-2. **SUPERSTORE PROJECT.pbix:** Interactive Power BI dashboard with filters, KPIs, and drill-downs  
-3. **Sample - Superstore.csv:** Source dataset  
+## 📊 Analysis Performed
+
+### 🔍 Exploratory Data Analysis (EDA)
+- Sales and profit distribution across regions and categories
+- Discount vs Profit relationship
+- Monthly and seasonal trends
+- Customer segmentation (low, medium, high value)
+- Region–category performance using pivot tables & heatmaps
+
+---
+
+### 📉 Statistical & Advanced Analysis
+- **Outlier Detection (IQR Method)**  
+  → Identified extreme values affecting business insights  
+
+- **Correlation Analysis**  
+  → Correlation dropped from **0.47 to 0.19 after removing outliers**, showing initial relationship was inflated  
+
+- **Multiple Linear Regression**  
+  → Analyzed impact of Sales, Discount, and Quantity on Profit  
+  → Model performance improved (**R² ≈ 0.27**)  
+
+- **Hypothesis Testing**
+  - **T-Test (South vs Others)**  
+    → No statistically significant regional difference (p > 0.05)
+  - **ANOVA (Category Comparison)**  
+    → Significant difference across categories (p < 0.05)
+
+---
+
+## 📊 Key Insights
+
+- Discount has a **strong negative impact** on profit
+- Sales positively influence profit but are affected by discounting
+- Category significantly impacts profitability (Technology highest margin)
+- Regional differences are **not statistically significant**
+- Outliers were distorting the sales–profit relationship
+- Business shows **strong seasonality (Nov–Dec peak)**
+
+---
+
+## 📊 Dashboard Highlights (Power BI)
+- KPI cards: Total Sales, Profit, Orders
+- Region-wise and Category-wise performance
+- Monthly sales trend analysis
+- Customer segmentation filters
+- Drill-down capability for detailed insights
+
+---
+
+## 💡 Business Recommendations
+
+- Optimize discount strategy to reduce unnecessary profit loss
+- Focus on high-margin categories like Technology
+- Target high-value customers for retention
+- Monitor and investigate loss-making orders
+- Align inventory and marketing with seasonal demand
+
+---
 
 ## 📈 Outcome
-- Cleaned and analyzed 9,994+ sales records  
-- Developed actionable business insights to improve sales strategy and customer targeting  
-- Created interactive dashboard for real-time monitoring of sales and profit performance
+- Analyzed **9,994+ records** to extract business insights
+- Built a regression model to identify key profit drivers
+- Validated insights using statistical testing
+- Developed an **interactive Power BI dashboard** for decision-making
+
+---
+
+## 📌 Conclusion
+Profitability is influenced by multiple factors including pricing strategy, product category, and customer behavior.  
+A data-driven approach combining analysis and visualization can significantly improve business performance.
