@@ -16,10 +16,10 @@ The analysis combines **Exploratory Data Analysis (EDA), statistical modeling, a
 ---
 
 ## 📂 Repository Structure
-  │ ├─ README.md # Project documentation
-  │ ├─ Sample - Superstore.csv # Raw dataset
-  │ ├─ Superstore_EDA_Complete.ipynb # Python analysis notebook
-  │ ├─ Superstore_Dashboard.pbix # Power BI dashboard
+│ ├─ README.md # Project documentation
+│ ├─ Sample - Superstore.csv # Raw dataset
+│ ├─ Superstore_EDA_Complete.ipynb # Python analysis notebook
+│ ├─ Superstore_Dashboard.pbix # Power BI dashboard
 
 
 ---
