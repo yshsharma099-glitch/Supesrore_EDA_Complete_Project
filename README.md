@@ -1,4 +1,4 @@
-# 📊 End-to-End Profitability Analysis & BI Solution
+# 📊 End-to-End Retail & Profitability Analysis & BI Solution
 
 ## 📌 Overview
 This project performs end-to-end data analysis on a retail Superstore dataset to identify key drivers of profitability and provide actionable business recommendations.
